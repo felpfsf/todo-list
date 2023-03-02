@@ -1,0 +1,51 @@
+.task_card {
+  margin-block: 0.5rem;
+  border: 1px solid var(--gray-400);
+  border-radius: .75rem;
+
+  padding: 1rem;
+
+  background-color: var(--gray-500);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.task_check {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.task_checked {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.task_delete {
+  color: var(--gray-300);
+  font-weight: 700;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.task_delete:hover,
+.task_delete:active,
+.task_delete:focus {
+  color: var(--danger);
+}
+
+.task_card__content {
+  width: 100%;
+}
+
+.task_text {
+  font-size: var(--font-size-small);
+}
