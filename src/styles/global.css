@@ -83,7 +83,7 @@ textarea {
 }
 
 :focus {
-  outline: 1px solid var(--green-light-color);
+  outline: 1px solid var(--gray-100);
 }
 
 .wrapper{
