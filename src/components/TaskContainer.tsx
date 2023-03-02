@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Task } from "../types";
 import styles from "./TaskContainer.module.css";
-import { TaskCard } from "./TaskCard";
 import { TaskEmpty } from "./TaskEmpty";
 import { AddTaskForm } from "./AddTaskForm";
 import { TaskList } from "./TaskList";
