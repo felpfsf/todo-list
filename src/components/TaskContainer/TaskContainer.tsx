@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Task } from "../types";
+import { Task } from "../../types";
 import styles from "./TaskContainer.module.css";
-import { TaskEmpty } from "./TaskEmpty";
-import { AddTaskForm } from "./AddTaskForm";
-import { TaskList } from "./TaskList";
+import { TaskEmpty } from "../TaskEmpty/TaskEmpty";
+import { TaskList } from "../TaskList/TaskList";
+import { AddTaskForm } from "../AddTaskForm/AddTaskForm";
 
 export const TaskContainer = () => {
   const [tasks, setTasks] = useState<Task[]>([]);

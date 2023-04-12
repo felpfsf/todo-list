@@ -1,5 +1,5 @@
-import { Task, TaskListProps } from "../types";
-import { TaskCard } from "./TaskCard";
+import { Task, TaskListProps } from "../../types";
+import { TaskCard } from "../TaskCard/TaskCard";
 
 export const TaskList = ({
   onTaskCheck,
