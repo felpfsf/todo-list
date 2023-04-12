@@ -1,19 +1,8 @@
 import { CheckCircle, Circle, Trash } from "phosphor-react";
-import { useState } from "react";
-import { TaskCardProps } from "../types";
+import { TaskCardProps } from "../../types";
 import styles from "./TaskCard.module.css";
 
 export const TaskCard = ({ task, onCheck, onDelete }: TaskCardProps) => {
-  const [checked, setChecked] = useState(false);
-  console.log(task.completed);
-
-  const handleCheck = () => {
-    setChecked((prev) => !prev);
-  };
-
-  const handleDelete = () => {
-    console.log("delete");
-  };
   return (
     <div className={styles.task_card}>
       <button className={styles.task_check} onClick={onCheck}>
